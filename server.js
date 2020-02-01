@@ -11,4 +11,8 @@ server.use(express.json());
 
 server.use('/api/cars', carsRouter);
 
+server.get('/', (req, res) => {
+    res.send(`<h1>Jake's Schema Project</h1>`)
+})
+
 module.exports = server;
